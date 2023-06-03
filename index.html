@@ -28,6 +28,8 @@
     <!-- Responsive Style -->
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 
+    <script src="assets/js/popup.js"></script>
+
     <style>
       h1 {
   text-align: center;
@@ -294,7 +296,7 @@
                   <img src="assets/img/gallery/img-1.jpg" alt="" />  
                   <div class="overlay">
                     <div class="icons">
-                      <a class="lightbox preview" class="link" href="#popup" onclick="openPopup('index8.html');">
+                      <a class="lightbox preview" class="link" href="#popup-content" onclick="openPopup('index8.html');">
                         <i class="icon-eye"></i>
                       </a>
                       <h1>Cadre Scrum </h1>
@@ -309,7 +311,7 @@
                   <img src="assets/img/gallery/img-2.jpg" alt=""/> 
                   <div class="overlay">
                     <div class="icons">
-                      <a class="lightbox preview" class="link" href="#popup" onclick="openPopup('index9.html');">
+                      <a class="lightbox preview" class="link" href="#popup-content" onclick="openPopup('index9.html');">
                         <i class="icon-eye"></i>
                       </a>
                       <h1>Gestion de risques</h1>
@@ -324,7 +326,7 @@
                   <img src="assets/img/gallery/img-3.jpg" alt=""/> 
                   <div class="overlay">
                     <div class="icons">
-                      <a class="lightbox preview" class="link" href="#popup" onclick="openPopup('index0.html');">
+                      <a class="lightbox preview" class="link" href="#popup-content" onclick="openPopup('index0.html');">
                         <i class="icon-eye"></i>
                       </a>
                       <h1>HTML/CSS/JAVASCRIPT </h1>
@@ -339,7 +341,7 @@
                   <img src="assets/img/gallery/img-4.jpg" alt="" /> 
                   <div class="overlay">
                     <div class="icons">
-                      <a  class="lightbox preview" class="link" href="#popup" onclick="openPopup('index7.html');">
+                      <a  class="lightbox preview" class="link" href="#popup-content" onclick="openPopup('index7.html');">
                         <i class="icon-eye"></i>
                       </a>
                       <h1>Esprit d’équipe </h1>
@@ -355,7 +357,7 @@
                   <div class="overlay">
                     <div class="icons">
                       
-                      <a  class="lightbox preview" class="link" href="#popup" onclick="openPopup('index6.html');">
+                      <a  class="lightbox preview" class="link" href="#popup-content" onclick="openPopup('index6.html');">
                         <i class="icon-eye"></i>
                         
                       </a>
@@ -371,7 +373,7 @@
                   <img src="assets/img/gallery/img-6.jpg" alt=""/>
                   <div class="overlay">
                     <div class="icons">
-                      <a  class="lightbox preview" class="link" href="#popup" onclick="openPopup('index5.html');">
+                      <a  class="lightbox preview" class="link" href="#popup-content" onclick="openPopup('index5.html');">
                         <i class="icon-eye"></i>
                       </a>
                       <h1>Pédagogie/Coaching</h1>
@@ -386,7 +388,7 @@
                   <img src="assets/img/gallery/img-2.jpg" alt=""/>
                   <div class="overlay">
                     <div class="icons">
-                      <a class="lightbox preview" class="link" href="#popup" onclick="openPopup('index3.html');">
+                      <a class="lightbox preview" class="link" href="#popup-content" onclick="openPopup('index3.html');">
                         
                         <i class="icon-eye"></i>
 
@@ -404,7 +406,7 @@
                   <img src="assets/img/gallery/img-1.jpg" alt=""/>
                   <div class="overlay">
                     <div class="icons">
-                      <a class="lightbox preview" class="link" href="#popup" onclick="openPopup('gestion_tache.html');">
+                      <a class="lightbox preview" class="link" href="#popup-content" onclick="openPopup('gestion_tache.html');">
                         <i class="icon-eye"></i>
                       </a>
                       <h1>Application de gestion de tâches</h1>
@@ -416,77 +418,12 @@
             
             <!-- First popup content -->
             <div id="popup" class="popup">
-              <div class="popup-content">
-                <button class="close-button" onclick="closePopup();">&times;</button>
-                <div class="popup-html"></div>
+              <div id="popup-content">
+                <button id="close-button" onclick="closePopup();">&times;</button>
+                <div id="popup-html"></div>
               </div>
             </div>
-            
-            <!-- CSS code -->
-            <style>
-              .popup {
-                display: none;
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0, 0, 0, 0.7);
-                z-index: 9;
-              }
-            
-              .popup-content {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                background-color: #fff;
-                padding: 20px;
-                border-radius: 5px;
-                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-              }
-            
-              .close-button {
-                position: absolute;
-                top: 10px;
-                right: 10px;
-                font-size: 20px;
-                background: none;
-                border: none;
-                color: #888;
-                cursor: pointer;
-              }
-            </style>
-            
-            <!-- JavaScript code -->
-            <script>
-              function openPopup(contentUrl) {
-                var popup = document.getElementById('popup');
-                if (popup) {
-                  popup.style.display = 'block';
-                  document.body.style.overflow = 'hidden'; // Prevent scrolling of background content
-            
-                  fetch(contentUrl) // Replace with the actual path to your HTML page
-                  .then(response => response.text())
-                  .then(html => {
-                    var popupContent = popup.querySelector('.popup-html');
-                    if (popupContent) {
-                      popupContent.innerHTML = html;
-                    }
-                  });
-                }
-              }
-            
-              function closePopup() {
-                var popup = document.getElementById('popup');
-                if (popup) {
-                  popup.style.display = 'none';
-                  document.body.style.overflow = 'auto'; // Restore scrolling of background content
-                }
-              }
-            </script>
-            
-            
+                      
             <div class="col-sm-9 col-md-4 col-lg-4 col-xl-4 mix development">
               <div class="portfolio-item">
                 <div class="shot-item">
@@ -497,7 +434,7 @@
                         <i class="icon-eye"></i>
                       </a>
                       <h1>Création Site Web</h1>
-                      <a href="#popup" onclick="openPopup('index4.html');">
+                      <a href="#popup-content" onclick="openPopup('index4.html');">
                         <i class="icon-link"></i>
                       </a>
                     </div>
@@ -599,19 +536,7 @@
             <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
               <ul class="social-icon">
                 <li>
-                  <a class="facebook" href="#"><i class="icon-social-facebook"></i></a>
-                </li>
-                <li>
-                  <a class="twitter" href="#"><i class="icon-social-twitter"></i></a>
-                </li>
-                <li>
-                  <a class="instagram" href="#"><i class="icon-social-instagram"></i></a>
-                </li>
-                <li>
-                  <a class="instagram" href="https://www.linkedin.com/in/sam-chibah/"><i class="icon-social-linkedin"></i></a>
-                </li>
-                <li>
-                  <a class="instagram" href="#"><i class="icon-social-google"></i></a>
+                  <a class="linkedin" href="https://www.linkedin.com/in/abdallah-elkhia/"><i class="icon-social-linkedin"></i></a>
                 </li>
               </ul>
               <p>Portfolio by Abdallah ELKHIA</p>
