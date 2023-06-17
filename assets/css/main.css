@@ -1154,14 +1154,16 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   list-style: disc; /* Set the list style to disc */
   padding-left: 20px; /* Add some left padding for indentation */
 }
+
 .popup {
   display: none;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 160%;
   height: 100%;
   max-height: 1500px;
+  margin: auto;
   z-index: 9;
 }
 
