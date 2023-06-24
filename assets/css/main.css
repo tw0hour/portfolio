@@ -1156,6 +1156,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 }
 
 #popup {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
