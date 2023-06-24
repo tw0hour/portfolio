@@ -1168,6 +1168,11 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   z-index: 9999; /* Assurez-vous que la popup est en premier plan */
 }
 
+.infos-article {
+  font-size: 1.2em;
+
+}
+
 #popup-content {
   position: relative;
   max-width: 100%; /* Largeur maximale de la fenêtre contextuelle */
