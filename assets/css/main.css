@@ -1156,7 +1156,6 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 }
 
 #popup {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -1175,6 +1174,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 }
 
 #popup-content {
+  display: none;
   position: relative;
   max-width: 100%; /* Largeur maximale de la fenêtre contextuelle */
   max-height: 80vh; /* Hauteur maximale de la fenêtre contextuelle */
