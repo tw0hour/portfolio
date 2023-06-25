@@ -1166,7 +1166,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   width: 60%;
   top: 50%;
   left: 31.2%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -75%);
   background-color: #fff;
   padding: 60px;
   border-radius: 5px;
