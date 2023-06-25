@@ -1,37 +1,55 @@
-<div class=" infos-article">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    h5 {
+        font-weight: bold;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+</style>
+</head>
+<body>
+  <div class=" infos-article">
 
-  <h3>Ms_Push</h3>
+    <h3>Ms_Push</h3>
+    <!-- Intertitre : Contexte -->
+  <h5>Contexte</h5>
+  <p>C'était durant ma deuxième année d'alternance chez Carrefour (2021/2022) alors que j'étudiais encore à l'ESGI. Mon tuteur m'avait transféré dans une nouvelle équipe chargée de gérer le panier d'achat sur le site Carrefour.com. Le stack technique utilisé était principalement basé sur Java Spring Boot. L'application sur laquelle je travaillais était une application interne destinée à être utilisée par l'équipe. J'ai travaillé dessus pendant toute ma deuxième année d'alternance et j'étais le seul à y travailler.</p>
   <br>
-  <h5>Contexte : </h5>
-  <p>C’était durant ma deuxième année d’alternance à Carrefour (2021/2022) j’étudias à ce moment-là à encore à l’ESGI.
-      Cette année mon tuteur m’avait changé d’équipe, dorénavant je devais travailler avec une équipe qui s’occuper de gérer 
-      le panier d’achat sur le site Carrefour.com le stack technique utilisé était majoritairement du Java SpringBoot. 
-      L’application sur laquelle est quant à elle une application interne qui servirai à l’usage de l’équipe. 
-      J’ai travaillé dessus pendant toute ma deuxième année d’alternance. J’étais le seule travailler dessus. 
-  </p>
+  
+  <!-- Intertitre : Description du projet -->
+  <h5>Description du projet</h5>
+  <p>Ms_Push est une API de mailing qui reçoit une requête en entrée et, en fonction de son contenu, renvoie un e-mail contenant une page HTML avec un contenu adapté. Le corps de la requête devait contenir une liste d'adresses e-mail des destinataires, un modèle représentant une donnée qui me servirait à choisir quel HTML générer, et un corps contenant des données descriptives.</p>
+  <p>Dans un premier temps, j'ai filtré toutes les adresses e-mail et, selon certains critères, je les ai catégorisées comme importantes ou non importantes. Ensuite, j'ai vérifié la valeur du modèle pour générer un HTML adapté en insérant les données descriptives. Enfin, j'ai renvoyé cet HTML sous forme d'e-mails groupés à tous les destinataires.</p>
   <br>
-  <h5>Description du projet : </h5>
-  <p>Ms_Push est une Api de mailing qui reçois une requête en entrée et qui selon le contenu de la requête renvoie un email contenant une page HTML avec un contenu adapté.
-    Le corps de la requête devait contenir une liste de destinataires représenté par des adresses mail, un template représentant une donnée qui me 
-    servira à choisir quel html généré, et un body qui représente des données descriptives.
-    Je devais dans un premier temps filtrer toutes les adresses mail et selon certains critères les catégoriser comme étant importants ou non importants. 
-    Une fois cela fait je devais vérifier la valeur du Template pour générer un html adapté en insérant les données descriptives.  
-    Enfin je devais renvoyer cet HTML sous forme de mails groupé à toutes les destinataires.
-    </p>
-    <br>
-  <h5>Stack technique : </h5>
-  <p>Cette application a été faite en Java 11 (Langage de programmation très utilisé en entreprise) avec le framework SpringBoot. J’ai utilisé le moteur de template de spring pour générer mes html.
-    J’ai également implémenté des tests unitaires / et d’intégrations en utilisant les librairies de java : junit et mockito.
-    Cette application devait être architecturé de la manière suivante : Application, Domain Infrastructure. Ce type d’architecture est appelé l’architecture hexagonal. 
-    C’est une architecture qui rend les applications plus flexibles, modulaires et faciles à maintenir.</p>
-    <ul class="list">
-      <li>• Le domaine correspond à la partie principale du système, celle qui gère les règles et les éléments spécifiques au métier.</li>
-      <li>• L'application coordonne les différentes parties du système et permet aux utilisateurs d'interagir avec celui-ci.</li>
-      <li>• L'infrastructure s'occupe des aspects techniques comme le stockage des données et les interfaces utilisateur.</li>
-    </ul>
-    </p>
-    <br>
-    <br>
-    Compétences humaines associés : <a href="#popup-content" onclick="openPopup('ecoute.html');">L'écoute</a> <br>
-    Compétences techniques associés : <a href="#popup-content" onclick="openPopup('tests.html');">Testes</a><br>
-</div>
+  
+  <!-- Intertitre : Stack technique -->
+  <h5>Stack technique</h5>
+  <p>Cette application a été développée en Java 11, un langage de programmation largement utilisé en entreprise, avec le framework Spring Boot. J'ai utilisé le moteur de template de Spring pour générer mes HTML. J'ai également mis en place des tests unitaires et d'intégration en utilisant les bibliothèques Java : JUnit et Mockito.</p>
+  <p>L'architecture de cette application devait respecter le modèle suivant : Application, Domaine, Infrastructure. Cette approche architecturale est connue sous le nom d'architecture hexagonale. Elle rend les applications plus flexibles, modulaires et faciles à maintenir.</p>
+  <br>
+  
+  <!-- Intertitre : Ce que j'ai appris -->
+  <h5>Ce que j'ai appris</h5>
+  <p>Ce projet de développement d'une API de mailing a été une expérience enrichissante pour moi. J'ai pu approfondir mes compétences en programmation Java et en utiliser le framework Spring Boot pour développer des fonctionnalités avancées. J'ai également acquis des connaissances pratiques en matière de test unitaire et d'intégration grâce à l'utilisation des bibliothèques JUnit et Mockito. Ce projet m'a permis de consolider mes connaissances techniques et de me familiariser avec l'architecture hexagonale.</p>
+  <br>
+  
+  <!-- Intertitre : Mes résultats -->
+  <h5>Mes résultats</h5>
+  <p>J'ai réussi à développer avec succès l'API de mailing Ms_Push, qui répond aux besoins de l'équipe chargée de la gestion du panier d'achat sur Carrefour.com. L'application a été déployée avec succès et est utilisée quotidiennement par l'équipe. Les fonctionnalités de filtrage des adresses e-mail, de génération d'HTML adapté et d'envoi groupé des e-mails ont été implémentées de manière efficace et fiable.</p>
+  <br>
+  
+  <!-- Intertitre : Ma satisfaction -->
+  <h5>Ma satisfaction</h5>
+  <p>Je suis extrêmement satisfait d'avoir pu mener à bien ce projet d'envergure pendant ma deuxième année d'alternance. Travailler de manière autonome sur un projet concret au sein d'une grande entreprise comme Carrefour a été une expérience gratifiante. J'ai pu constater mes progrès en matière de compétences techniques, de résolution de problèmes et de collaboration avec une équipe. La réussite de ce projet a renforcé ma confiance en moi et ma motivation à poursuivre une carrière dans le développement logiciel.</p>
+      <br>
+      Compétences humaines associés : <a href="#popup-content" onclick="openPopup('ecoute.html');">L'écoute</a> <br>
+      Compétences techniques associés : <a href="#popup-content" onclick="openPopup('tests.html');">Testes</a><br>
+  </div>
+</body>
+</html>

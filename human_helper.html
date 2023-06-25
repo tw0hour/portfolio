@@ -1,58 +1,79 @@
-<div class=" infos-article">  
-  <h3>Human helper</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    h5 {
+        font-weight: bold;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+</style>
+</head>
+<body>
+  <div class=" infos-article">  
+    <h3>Human helper</h3>
+    <!-- Intertitre : Contexte et enjeux -->
+  <h5>Contexte et enjeux</h5>
+  <p>Ce projet a été réalisé en 2021 lors de ma 4ème année d'étude à l'ESGI. Il faisait partie des critères pour valider mon année et obtenir mon diplôme de Bachelor en architecture logicielle. Chaque année à l'ESGI, nous devions réaliser plusieurs projets, mais il y avait un projet particulièrement important appelé "projet annuel". Ce projet de grande envergure devait être réalisé en équipe sur une durée d'environ 3 mois. Il avait un impact significatif sur la validation de notre année, et si ce projet n'était pas validé, nous devions passer en rattrapage.</p>
   <br>
-  <p>
-    Ce Projet a été réalisé en 2021 durant ma 4ème année d’étude à l’ESGI, il faisait partie des critères pour valider mon année et ainsi obtenir mon diplôme de Bachelor en architecture logicielle.
-    Dans mon ancienne école l’esgi, chaque année il fallait réaliser tout un tas de projets, mais il y’avais un projet particulièrement important qui revenait chaque année et qu’on appelait « projet annuel ».Il s’agissait d’un projet de plus grande envergure que les autres projets de l’année, dans celui-ci il fallait utiliser plus de technos, et surtout même si nous avions la moyenne pour passer à l’année suivante, si ce projet en particulier n’était pas validé, alors nous devions aller en rattrapage.
-    <br>
-    C’est un projet en équipe que nous devons réaliser pendant une durée de 3 mois environ. A la fin de ce délai une soutenance était faite. A la fin de celle-ci le jury décidait de notre sort. 
-    Le thème imposé du projet annuel était : écologie et solidarité. C’est pourquoi mon équipe et moi avions choisi de faire le projet Human-helper dont le but était de permettre aux personnes en manque de moyens d’être nourri, recevoir des médicament, des vêtement et de l’argent.
-    <br>
-    Cette partie du projet était divisé en Trois grandes parties : 
-    <ul>
-      <li><b>Application 1 : </b>
-        
-          Cette application est destiné à des associations, et d’autres structures, elle permet à ces derniers de rentrer des informations sur la localisations des lieux dans lesquelles il y’aurait une forte concentration de gens dans le besoin (Sans abri, manque de nourriture…) qu’on appellerait des « camps ». Une association peut donc ajouter et s’occuper de plusieurs camps dans l’application. 
-        
-      </li>
-      <li><b>Application 2 : </b>
-        
-          Cette application est réservé aux bénévoles, elle permet à ces derniers de voir la listes des différents camps ajoutés dans l’application par les associations de l’application 1, et de proposer de faire livrer à ces camps à une date et une horaire fixé, de la nourriture, des vêtements et des médicaments. Ainsi si un bénévole propose de livrer le 5 avril a 9h, la date est prise, donc les bénévoles voulant aussi livrer dans ce même camp devront prendre une horaire différente.
-          <br>
-          L’application permet également aux bénévoles de faire des dons aux associations dans des cagnottes que les associations donnerons aux camps qu’ils s’occupent.
-        
-      </li>
-      <li><b>Api :</b>
-        
-          L’api nous permet de faire le lien entre les deux premières applications, c’est cette application qui s’occupe de faire des entrées en base de données et de renvoyer les données demandés.
-        
-    </ul>
-    <br>
-    <br>
-    
-      Et à coté de cela nous devions aussi développer une application « human-helper_management » qui nous permettrais de gérer nos différentes tâches.
-    
-    <h5>Les technologies utilisées :</h5>
-    
-      Pour le développement de l’api nous avons utilisé Nodejs avec le framework Sequelize. Pour l’application 1 et 2 nous avons utilisé du Angular et Nous avons développé  l’application « human-helper_management » en Java en utilisant Javafx.
-      <br>
-      Nous avions également fait une mini api en Nodejs pour cette application.
-    
-    <br>
-    
-      Ce projet est un des projets dont je suis le plus fière d’avoir réalisé dans mes projets scolaires, et il faut dire qu’il y’a eu des hauts et des bas. Déjà l’organisation, 
-      la communication est une partie très importante dans des projets en équipe, et si il n’avait pas eu un minimum de tout cela, je n’aurais pas pu valider ce projet. 
-      Ensuite malheureusement tous les projets ne peuvent pas toujours se passer à merveille et il faut savoir prendre du recul pour ne pas mettre en péril le projet. 
-      J’ai eu l’occasion de le vivre et je comprends aujourd’hui que malgré la bonne communication qu’il y a eu avec mon équipe il n’yen a pas eu assez. 
-      Mais aujourd’hui je n’en ressort que plus expérimenté. Et enfin Malgré le manque de motivation et le découragement, 
-      il ne faut pas abandonner, j’ai eu des moments de baisses de morale et de motivation mais je me suis toujours repris en main à temps, ce qui m’a permis aujourd’hui d’obtenir mon diplôme. Au final ce projet m’a mis dans un contexte de projet entreprise, à la différence que nous devions ici tout gérer et cela m’a permis non seulement de gagner en compétences dans les domaines techniques mais aussi de mieux travailler et s’organiser dans un projet d’équipe.
-    
-
-
-    Compétences humaines associés : <a href="#popup-content" onclick="openPopup('perseverance.html');">persévérance</a>,
-                                    <a href="#popup-content" onclick="openPopup('adaptation.html');">Adaptation</a>,
-                                    <a href="#popup-content" onclick="openPopup('ecoute.html');">L'écoute</a> <br>
-    Compétences techniques associés : <a href="#popup-content" onclick="openPopup('bdd.html');">Concepion de base de données</a>,
-                                      <a href="#popup-content" onclick="openPopup('javascript.html');">JavaScript</a>
-  </p>
-</div>
+  
+  <!-- Intertitre : Le projet Human-helper -->
+  <h5>Le projet Human-helper</h5>
+  <p>Le thème imposé du projet annuel était l'écologie et la solidarité. Mon équipe et moi avons choisi de créer le projet Human-helper, dont l'objectif était d'aider les personnes en situation de précarité en leur fournissant de la nourriture, des médicaments, des vêtements et des ressources financières. Le projet était divisé en trois grandes parties :</p>
+  <br>
+  
+  <!-- Intertitre : Application 1 -->
+  <h5>Application 1</h5>
+  <p>Cette application était destinée aux associations et autres structures. Elle leur permettait de signaler les lieux où se trouvaient des concentrations importantes de personnes dans le besoin, que nous appelions des "camps". Une association pouvait ajouter et gérer plusieurs camps dans l'application.</p>
+  <br>
+  
+  <!-- Intertitre : Application 2 -->
+  <h5>Application 2</h5>
+  <p>Cette application était réservée aux bénévoles. Elle leur permettait de consulter la liste des camps ajoutés par les associations dans l'application 1. Les bénévoles pouvaient proposer de livrer de la nourriture, des vêtements et des médicaments à ces camps à une date et une heure spécifiées. L'application gérait également les dons des bénévoles aux associations, qui les redistribuaient aux camps qu'elles soutenaient.</p>
+  <br>
+  
+  <!-- Intertitre : L'API -->
+  <h5>L'API</h5>
+  <p>L'API faisait le lien entre les deux applications précédentes. Elle était responsable de l'entrée des données dans la base de données et de la récupération des informations demandées.</p>
+  <br>
+  
+  <!-- Intertitre : Application "human-helper_management" -->
+  <h5>Application "human-helper_management"</h5>
+  <p>En plus des applications principales, nous avons développé une application appelée "human-helper_management" qui nous permettait de gérer nos différentes tâches.</p>
+  <br>
+  
+  <!-- Intertitre : Technologies utilisées -->
+  <h5>Technologies utilisées</h5>
+  <p>Pour le développement de l'API, nous avons utilisé Node.js avec le framework Sequelize. Les applications 1 et 2 ont été développées avec Angular, tandis que l'application "human-helper_management" a été développée en Java avec JavaFX. Nous avons également créé une mini API en Node.js pour cette application.</p>
+  <br>
+  
+  <!-- Intertitre : Apprentissages et résultats -->
+  <h5>Apprentissages et résultats</h5>
+  <p>Ce projet est l'un de ceux dont je suis le plus fier parmi tous mes projets scolaires. Il y a eu des hauts et des bas. L'organisation et la communication étaient des aspects cruciaux dans ce projet d'équipe. Sans une bonne dose de ces éléments, je n'aurais pas pu le valider. J'ai également appris à prendre du recul pour ne pas compromettre le projet lorsque des problèmes sont survenus. Malgré une bonne communication avec mon équipe, nous aurions pu faire encore mieux. Cependant, cette expérience m'a rendu plus expérimenté.</p>
+  <br>
+  
+  <!-- Intertitre : Satisfaction et persévérance -->
+  <h5>Satisfaction et persévérance</h5>
+  <p>Malgré des moments de découragement et de baisse de motivation, j'ai appris qu'il ne faut jamais abandonner. J'ai su reprendre le contrôle de ma motivation à temps, ce qui m'a permis d'obtenir mon diplôme. Ce projet m'a placé dans un contexte similaire à celui d'un projet en entreprise, à la différence que nous devions tout gérer nous-mêmes. Cela m'a permis de développer mes compétences techniques, ainsi que d'améliorer ma capacité à travailler et à m'organiser au sein d'une équipe.</p>
+  <br>
+  
+  <!-- Intertitre : Conclusion -->
+  <h5>Conclusion</h5>
+  <p>En conclusion, ce projet a été un défi stimulant et formateur. Il m'a permis d'acquérir de nouvelles compétences techniques, de renforcer ma capacité d'organisation et de communication, et de développer ma persévérance face aux difficultés. Je suis fier d'avoir réussi à le mener à bien malgré les obstacles rencontrés. Il représente une étape importante dans ma formation et je suis convaincu qu'il me servira dans ma future carrière.</p>
+  <br>
+      
+  
+  
+      Compétences humaines associés : <a href="#popup-content" onclick="openPopup('perseverance.html');">persévérance</a>,
+                                      <a href="#popup-content" onclick="openPopup('adaptation.html');">Adaptation</a>,
+                                      <a href="#popup-content" onclick="openPopup('ecoute.html');">L'écoute active</a> <br>
+      Compétences techniques associés : <a href="#popup-content" onclick="openPopup('bdd.html');">Conception de base de données</a>,
+                                        <a href="#popup-content" onclick="openPopup('javascript.html');">JavaScript</a>
+    </p>
+  </div>
+</body>
+</html>
