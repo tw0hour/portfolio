@@ -15,6 +15,10 @@
     <link rel="stylesheet" type="text/css" href="assets/fonts/simple-line-icons.css">
     <!-- Slicknav -->
     <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
+    <!-- Menu CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/menu_sideslide.css">
+    <!-- Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slide-style.css">
     <!-- Nivo Lightbox -->
     <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css" >
     <!-- Animate -->
@@ -158,6 +162,7 @@
                   <li><span class="pro-title"> Name </span> <span class="pro-detail">Abdallah ELKHIA</span></li>
                   <li><span class="pro-title"> Location </span> <span class="pro-detail">Paris</span></li>
                   <li><span class="pro-title"> e-mail </span> <span class="pro-detail">ismael.abdallah10@gmail.com</span></li>
+                  <li><span class="pro-title"> Phone </span> <span class="pro-detail">06 49 34 95 92</span></li>
                   <li><span class="pro-title"> Freelance/CDI </span> <span class="pro-detail">Disponible/Disponible</span></li>
                 </ul>
               </div>
@@ -275,7 +280,7 @@
                   <img src="assets/img/gallery/img-1.jpg" alt="" />
                   <div class="overlay">
                     <div class="icons">
-                      <a  class="link" href="#popup-content" onclick="openPopup('javascript.html');">
+                      <a class="lightbox preview" class="link" href="#popup-content" onclick="openPopup('javascript.html');">
                         <i class="icon-eye"></i>
                       </a>
                       <h1>JavaScript</h1>
@@ -290,7 +295,7 @@
                   <img src="assets/img/gallery/img-2.jpg" alt=""/>
                   <div class="overlay">
                     <div class="icons">
-                      <a  class="link" href="#popup-content" onclick="openPopup('tests.html');">
+                      <a class="lightbox preview" class="link" href="#popup-content" onclick="openPopup('tests.html');">
                         <i class="icon-eye"></i>
                       </a>
                       <h1>Test unitaires / d’intégration / fonctionnel</h1>
@@ -305,10 +310,10 @@
                   <img src="assets/img/gallery/img-3.jpg" alt=""/>
                   <div class="overlay">
                     <div class="icons">
-                      <a  class="link" href="#popup-content" onclick="openPopup('bdd.html');">
+                      <a class="lightbox preview" class="link" href="#popup-content" onclick="openPopup('bdd.html');">
                         <i class="icon-eye"></i>
                       </a>
-                      <h1>Concepion base de données</h1>
+                      <h1>Conception base de données</h1>
                     </div>
                   </div>
                 </div>
@@ -320,7 +325,7 @@
                   <img src="assets/img/gallery/img-4.jpg" alt="" />
                   <div class="overlay">
                     <div class="icons">
-                      <a   class="link" href="#popup-content" onclick="openPopup('perseverance.html');">
+                      <a  class="lightbox preview" class="link" href="#popup-content" onclick="openPopup('perseverance.html');">
                         <i class="icon-eye"></i>
                       </a>
                       <h1>La persévérance</h1>
@@ -336,7 +341,7 @@
                   <div class="overlay">
                     <div class="icons">
 
-                      <a  class="link" href="#popup-content" onclick="openPopup('ecoute.html');">
+                      <a  class="lightbox preview" class="link" href="#popup-content" onclick="openPopup('ecoute.html');">
                         <i class="icon-eye"></i>
 
                       </a>
@@ -352,7 +357,7 @@
                   <img src="assets/img/gallery/img-6.jpg" alt=""/>
                   <div class="overlay">
                     <div class="icons">
-                      <a  class="link" href="#popup-content" onclick="openPopup('adaptation.html');">
+                      <a  class="lightbox preview" class="link" href="#popup-content" onclick="openPopup('adaptation.html');">
                         <i class="icon-eye"></i>
                       </a>
                       <h1>Adaptation</h1>
@@ -367,7 +372,7 @@
                   <img src="assets/img/gallery/img-2.jpg" alt=""/>
                   <div class="overlay">
                     <div class="icons">
-                      <a  class="link" href="#popup-content" onclick="openPopup('human_helper.html');">
+                      <a class="lightbox preview" class="link" href="#popup-content" onclick="openPopup('human_helper.html');">
 
                         <i class="icon-eye"></i>
 
@@ -385,7 +390,7 @@
                   <img src="assets/img/gallery/img-1.jpg" alt=""/>
                   <div class="overlay">
                     <div class="icons">
-                      <a  class="link" href="#popup-content" onclick="openPopup('gestion_tache.html');">
+                      <a class="lightbox preview" class="link" href="#popup-content" onclick="openPopup('gestion_tache.html');">
                         <i class="icon-eye"></i>
                       </a>
                       <h1>Application de gestion de tâches</h1>
@@ -400,7 +405,7 @@
                   <img src="assets/img/gallery/img-3.jpg" alt=""/>
                   <div class="overlay">
                     <div class="icons">
-                      <a  class="link" href="#popup-content" onclick="openPopup('api_springboot.html');">
+                      <a class="lightbox preview" class="link" href="#popup-content" onclick="openPopup('api_springboot.html');">
                         <i class="icon-eye"></i>
                       </a>
                       <h1>Ms_push</h1>
@@ -488,6 +493,10 @@
                     <p><a href="mailto:ismael.abdallah10@gmail.com">ismael.abdallah10@gmail.com</a></p>
                   </div>
                   <div class="single-contact">
+                    <div class="contact-icon">
+                      <i class="fa fa-phone"></i>
+                    </div>
+                    <p><a href="#"></a></p>
                   </div>
                 </div>
               </div>
@@ -535,6 +544,9 @@
     <script src="assets/js/nivo-lightbox.js"></script>
     <script src="assets/js/jquery.slicknav.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.min.js"></script>
+    <script src="assets/js/map.js"></script>
 
   </body>
 </html>
